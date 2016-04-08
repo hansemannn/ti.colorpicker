@@ -36,6 +36,12 @@
     [[[self colorPickerView] colorPicker] setCropToCircle:[TiUtils boolValue:value def:NO]];
 }
 
+-(void)setShowLoupe:(id)value
+{
+    ENSURE_TYPE(value, NSNumber);
+    [[[self colorPickerView] colorPicker] setShowLoupe:[TiUtils boolValue:value def:YES]];
+}
+
 #pragma mark Helper
 
 USE_VIEW_FOR_CONTENT_WIDTH

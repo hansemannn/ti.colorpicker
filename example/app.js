@@ -3,7 +3,12 @@ var ColorPicker = require("ti.colorpicker");
 var picker = ColorPicker.createColorPickerView({
     width: 300,
     height: 300,
-    top: 30
+    top: 30,
+// -- Colorpicker-specific properties
+//  opacity: 1.0,
+//  brightness: 1.0,
+//  cropToCircle: false,
+//  showLoupe: true
 });
 
 picker.addEventListener("selection", function(e) {
