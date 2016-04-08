@@ -2,6 +2,9 @@
 
 Support color pickers in Titanium Mobile. This module bridges [RSColorPicker](https://github.com/RSully/RSColorPicker), thank you @RSully!
 
+<img width="225" src="http://abload.de/img/colorpickerojjlu.png">
+
+
 ## Usage
 
 ```js
