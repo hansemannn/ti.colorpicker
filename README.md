@@ -4,7 +4,6 @@ Support color pickers in Titanium Mobile. This module bridges [RSColorPicker](ht
 
 <img width="225" src="http://abload.de/img/colorpickerojjlu.png">
 
-
 ## Usage
 
 ```js
@@ -38,3 +37,7 @@ win.add(result);
 win.add(picker);
 win.open();
 ```
+
+## Copyright
+
+&copy; 2016 by Hans Knoechel
