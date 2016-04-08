@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* TiColorpickerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* TiColorpickerModule.h */; };
+		24DD6CFA1134B3F500162E58 /* TiColorpickerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiColorpickerModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* TiColorpickerModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiColorpickerModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* TiColorpickerModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiColorpickerModuleAssets.m */; };
+		3ADFA3BA1CB81A6700D5270A /* ANImageBitmapRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA38C1CB81A6700D5270A /* ANImageBitmapRep.h */; };
+		3ADFA3BB1CB81A6700D5270A /* ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA38D1CB81A6700D5270A /* ANImageBitmapRep.m */; };
+		3ADFA3BC1CB81A6700D5270A /* BitmapContextRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA38E1CB81A6700D5270A /* BitmapContextRep.h */; };
+		3ADFA3BD1CB81A6700D5270A /* BitmapContextRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA38F1CB81A6700D5270A /* BitmapContextRep.m */; };
+		3ADFA3BE1CB81A6700D5270A /* NSImage+ANImageBitmapRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3911CB81A6700D5270A /* NSImage+ANImageBitmapRep.h */; };
+		3ADFA3BF1CB81A6700D5270A /* NSImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3921CB81A6700D5270A /* NSImage+ANImageBitmapRep.m */; };
+		3ADFA3C01CB81A6700D5270A /* OSCommonImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3931CB81A6700D5270A /* OSCommonImage.h */; };
+		3ADFA3C11CB81A6700D5270A /* OSCommonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3941CB81A6700D5270A /* OSCommonImage.m */; };
+		3ADFA3C21CB81A6700D5270A /* UIImage+ANImageBitmapRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3951CB81A6700D5270A /* UIImage+ANImageBitmapRep.h */; };
+		3ADFA3C31CB81A6700D5270A /* UIImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3961CB81A6700D5270A /* UIImage+ANImageBitmapRep.m */; };
+		3ADFA3C41CB81A6700D5270A /* CGContextCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3981CB81A6700D5270A /* CGContextCreator.h */; };
+		3ADFA3C51CB81A6700D5270A /* CGContextCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3991CB81A6700D5270A /* CGContextCreator.m */; };
+		3ADFA3C61CB81A6700D5270A /* CGImageContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA39A1CB81A6700D5270A /* CGImageContainer.h */; };
+		3ADFA3C71CB81A6700D5270A /* CGImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA39B1CB81A6700D5270A /* CGImageContainer.m */; };
+		3ADFA3C81CB81A6700D5270A /* BitmapContextManipulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA39D1CB81A6700D5270A /* BitmapContextManipulator.h */; };
+		3ADFA3C91CB81A6700D5270A /* BitmapContextManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA39E1CB81A6700D5270A /* BitmapContextManipulator.m */; };
+		3ADFA3CA1CB81A6700D5270A /* BitmapCropManipulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA39F1CB81A6700D5270A /* BitmapCropManipulator.h */; };
+		3ADFA3CB1CB81A6700D5270A /* BitmapCropManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3A01CB81A6700D5270A /* BitmapCropManipulator.m */; };
+		3ADFA3CC1CB81A6700D5270A /* BitmapDrawManipulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3A11CB81A6700D5270A /* BitmapDrawManipulator.h */; };
+		3ADFA3CD1CB81A6700D5270A /* BitmapDrawManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3A21CB81A6700D5270A /* BitmapDrawManipulator.m */; };
+		3ADFA3CE1CB81A6700D5270A /* BitmapRotationManipulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3A31CB81A6700D5270A /* BitmapRotationManipulator.h */; };
+		3ADFA3CF1CB81A6700D5270A /* BitmapRotationManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3A41CB81A6700D5270A /* BitmapRotationManipulator.m */; };
+		3ADFA3D01CB81A6700D5270A /* BitmapScaleManipulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3A51CB81A6700D5270A /* BitmapScaleManipulator.h */; };
+		3ADFA3D11CB81A6700D5270A /* BitmapScaleManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3A61CB81A6700D5270A /* BitmapScaleManipulator.m */; };
+		3ADFA3D21CB81A6700D5270A /* BGRSLoupeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3A71CB81A6700D5270A /* BGRSLoupeLayer.h */; };
+		3ADFA3D31CB81A6700D5270A /* BGRSLoupeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3A81CB81A6700D5270A /* BGRSLoupeLayer.m */; };
+		3ADFA3D41CB81A6700D5270A /* RSColorFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3A91CB81A6700D5270A /* RSColorFunctions.h */; };
+		3ADFA3D51CB81A6700D5270A /* RSColorFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3AA1CB81A6700D5270A /* RSColorFunctions.m */; };
+		3ADFA3D61CB81A6700D5270A /* RSColorPickerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3AB1CB81A6700D5270A /* RSColorPickerState.h */; };
+		3ADFA3D71CB81A6700D5270A /* RSColorPickerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3AC1CB81A6700D5270A /* RSColorPickerState.m */; };
+		3ADFA3D81CB81A6700D5270A /* RSColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3AD1CB81A6700D5270A /* RSColorPickerView.h */; };
+		3ADFA3D91CB81A6700D5270A /* RSColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3AE1CB81A6700D5270A /* RSColorPickerView.m */; };
+		3ADFA3DA1CB81A6700D5270A /* RSGenerateOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3AF1CB81A6700D5270A /* RSGenerateOperation.h */; };
+		3ADFA3DB1CB81A6700D5270A /* RSGenerateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3B01CB81A6700D5270A /* RSGenerateOperation.m */; };
+		3ADFA3DC1CB81A6700D5270A /* RSSelectionLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B11CB81A6700D5270A /* RSSelectionLayer.h */; };
+		3ADFA3DD1CB81A6700D5270A /* RSSelectionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3B21CB81A6700D5270A /* RSSelectionLayer.m */; };
+		3ADFA3DE1CB81A6700D5270A /* RSBrightnessSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B31CB81A6700D5270A /* RSBrightnessSlider.h */; };
+		3ADFA3DF1CB81A6700D5270A /* RSBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3B41CB81A6700D5270A /* RSBrightnessSlider.m */; };
+		3ADFA3E01CB81A6700D5270A /* RSColorPicker-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B51CB81A6700D5270A /* RSColorPicker-Prefix.pch */; };
+		3ADFA3E11CB81A6700D5270A /* RSOpacitySlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B61CB81A6700D5270A /* RSOpacitySlider.h */; };
+		3ADFA3E21CB81A6700D5270A /* RSOpacitySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3B71CB81A6700D5270A /* RSOpacitySlider.m */; };
+		3ADFA3E31CB81A6700D5270A /* TestColorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B81CB81A6700D5270A /* TestColorViewController.h */; };
+		3ADFA3E41CB81A6700D5270A /* TestColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3B91CB81A6700D5270A /* TestColorViewController.m */; };
+		3ADFA3E61CB81A8400D5270A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADFA3E51CB81A8400D5270A /* Accelerate.framework */; };
+		3ADFA3E81CB81A8800D5270A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADFA3E71CB81A8800D5270A /* QuartzCore.framework */; };
+		3ADFA3EA1CB81A8E00D5270A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADFA3E91CB81A8E00D5270A /* CoreGraphics.framework */; };
+		3ADFA3ED1CB81B1800D5270A /* TiColorpickerColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3EB1CB81B1800D5270A /* TiColorpickerColorPickerView.h */; };
+		3ADFA3EE1CB81B1800D5270A /* TiColorpickerColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3EC1CB81B1800D5270A /* TiColorpickerColorPickerView.m */; };
+		3ADFA3F11CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3EF1CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h */; };
+		3ADFA3F21CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3F01CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m */; };
+		AA747D9F0F9514B9006C5449 /* TiColorpicker_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiColorpicker_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ti.colorpicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* TiColorpickerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiColorpickerModule.h; path = Classes/TiColorpickerModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* TiColorpickerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiColorpickerModule.m; path = Classes/TiColorpickerModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* TiColorpickerModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiColorpickerModuleAssets.h; path = Classes/TiColorpickerModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* TiColorpickerModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiColorpickerModuleAssets.m; path = Classes/TiColorpickerModuleAssets.m; sourceTree = "<group>"; };
+		3ADFA38C1CB81A6700D5270A /* ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANImageBitmapRep.h; sourceTree = "<group>"; };
+		3ADFA38D1CB81A6700D5270A /* ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANImageBitmapRep.m; sourceTree = "<group>"; };
+		3ADFA38E1CB81A6700D5270A /* BitmapContextRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextRep.h; sourceTree = "<group>"; };
+		3ADFA38F1CB81A6700D5270A /* BitmapContextRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextRep.m; sourceTree = "<group>"; };
+		3ADFA3911CB81A6700D5270A /* NSImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		3ADFA3921CB81A6700D5270A /* NSImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		3ADFA3931CB81A6700D5270A /* OSCommonImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCommonImage.h; sourceTree = "<group>"; };
+		3ADFA3941CB81A6700D5270A /* OSCommonImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCommonImage.m; sourceTree = "<group>"; };
+		3ADFA3951CB81A6700D5270A /* UIImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		3ADFA3961CB81A6700D5270A /* UIImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		3ADFA3981CB81A6700D5270A /* CGContextCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextCreator.h; sourceTree = "<group>"; };
+		3ADFA3991CB81A6700D5270A /* CGContextCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextCreator.m; sourceTree = "<group>"; };
+		3ADFA39A1CB81A6700D5270A /* CGImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageContainer.h; sourceTree = "<group>"; };
+		3ADFA39B1CB81A6700D5270A /* CGImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageContainer.m; sourceTree = "<group>"; };
+		3ADFA39D1CB81A6700D5270A /* BitmapContextManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextManipulator.h; sourceTree = "<group>"; };
+		3ADFA39E1CB81A6700D5270A /* BitmapContextManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextManipulator.m; sourceTree = "<group>"; };
+		3ADFA39F1CB81A6700D5270A /* BitmapCropManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapCropManipulator.h; sourceTree = "<group>"; };
+		3ADFA3A01CB81A6700D5270A /* BitmapCropManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapCropManipulator.m; sourceTree = "<group>"; };
+		3ADFA3A11CB81A6700D5270A /* BitmapDrawManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapDrawManipulator.h; sourceTree = "<group>"; };
+		3ADFA3A21CB81A6700D5270A /* BitmapDrawManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapDrawManipulator.m; sourceTree = "<group>"; };
+		3ADFA3A31CB81A6700D5270A /* BitmapRotationManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapRotationManipulator.h; sourceTree = "<group>"; };
+		3ADFA3A41CB81A6700D5270A /* BitmapRotationManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapRotationManipulator.m; sourceTree = "<group>"; };
+		3ADFA3A51CB81A6700D5270A /* BitmapScaleManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapScaleManipulator.h; sourceTree = "<group>"; };
+		3ADFA3A61CB81A6700D5270A /* BitmapScaleManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapScaleManipulator.m; sourceTree = "<group>"; };
+		3ADFA3A71CB81A6700D5270A /* BGRSLoupeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRSLoupeLayer.h; sourceTree = "<group>"; };
+		3ADFA3A81CB81A6700D5270A /* BGRSLoupeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRSLoupeLayer.m; sourceTree = "<group>"; };
+		3ADFA3A91CB81A6700D5270A /* RSColorFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSColorFunctions.h; sourceTree = "<group>"; };
+		3ADFA3AA1CB81A6700D5270A /* RSColorFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSColorFunctions.m; sourceTree = "<group>"; };
+		3ADFA3AB1CB81A6700D5270A /* RSColorPickerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSColorPickerState.h; sourceTree = "<group>"; };
+		3ADFA3AC1CB81A6700D5270A /* RSColorPickerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSColorPickerState.m; sourceTree = "<group>"; };
+		3ADFA3AD1CB81A6700D5270A /* RSColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSColorPickerView.h; sourceTree = "<group>"; };
+		3ADFA3AE1CB81A6700D5270A /* RSColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSColorPickerView.m; sourceTree = "<group>"; };
+		3ADFA3AF1CB81A6700D5270A /* RSGenerateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSGenerateOperation.h; sourceTree = "<group>"; };
+		3ADFA3B01CB81A6700D5270A /* RSGenerateOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSGenerateOperation.m; sourceTree = "<group>"; };
+		3ADFA3B11CB81A6700D5270A /* RSSelectionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSelectionLayer.h; sourceTree = "<group>"; };
+		3ADFA3B21CB81A6700D5270A /* RSSelectionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSelectionLayer.m; sourceTree = "<group>"; };
+		3ADFA3B31CB81A6700D5270A /* RSBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBrightnessSlider.h; sourceTree = "<group>"; };
+		3ADFA3B41CB81A6700D5270A /* RSBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBrightnessSlider.m; sourceTree = "<group>"; };
+		3ADFA3B51CB81A6700D5270A /* RSColorPicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSColorPicker-Prefix.pch"; sourceTree = "<group>"; };
+		3ADFA3B61CB81A6700D5270A /* RSOpacitySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOpacitySlider.h; sourceTree = "<group>"; };
+		3ADFA3B71CB81A6700D5270A /* RSOpacitySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOpacitySlider.m; sourceTree = "<group>"; };
+		3ADFA3B81CB81A6700D5270A /* TestColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestColorViewController.h; sourceTree = "<group>"; };
+		3ADFA3B91CB81A6700D5270A /* TestColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestColorViewController.m; sourceTree = "<group>"; };
+		3ADFA3E51CB81A8400D5270A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3ADFA3E71CB81A8800D5270A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3ADFA3E91CB81A8E00D5270A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3ADFA3EB1CB81B1800D5270A /* TiColorpickerColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiColorpickerColorPickerView.h; path = Classes/TiColorpickerColorPickerView.h; sourceTree = "<group>"; };
+		3ADFA3EC1CB81B1800D5270A /* TiColorpickerColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiColorpickerColorPickerView.m; path = Classes/TiColorpickerColorPickerView.m; sourceTree = "<group>"; };
+		3ADFA3EF1CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiColorpickerColorPickerViewProxy.h; path = Classes/TiColorpickerColorPickerViewProxy.h; sourceTree = "<group>"; };
+		3ADFA3F01CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiColorpickerColorPickerViewProxy.m; path = Classes/TiColorpickerColorPickerViewProxy.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* TiColorpicker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiColorpicker_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libTiColorpicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiColorpicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ADFA3EA1CB81A8E00D5270A /* CoreGraphics.framework in Frameworks */,
+				3ADFA3E81CB81A8800D5270A /* QuartzCore.framework in Frameworks */,
+				3ADFA3E61CB81A8400D5270A /* Accelerate.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libTiColorpicker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ti.colorpicker */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = ti.colorpicker;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA3E91CB81A8E00D5270A /* CoreGraphics.framework */,
+				3ADFA3E71CB81A8800D5270A /* QuartzCore.framework */,
+				3ADFA3E51CB81A8400D5270A /* Accelerate.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA3891CB81A6700D5270A /* RSColorPicker */,
+				24DE9E0F11C5FE74003F90F6 /* TiColorpickerModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* TiColorpickerModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* TiColorpickerModule.h */,
+				24DD6CF81134B3F500162E58 /* TiColorpickerModule.m */,
+				3ADFA3F31CB81B2A00D5270A /* ColorPickerView */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* TiColorpicker_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		3ADFA3891CB81A6700D5270A /* RSColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA38A1CB81A6700D5270A /* ColorPickerClasses */,
+				3ADFA3B31CB81A6700D5270A /* RSBrightnessSlider.h */,
+				3ADFA3B41CB81A6700D5270A /* RSBrightnessSlider.m */,
+				3ADFA3B51CB81A6700D5270A /* RSColorPicker-Prefix.pch */,
+				3ADFA3B61CB81A6700D5270A /* RSOpacitySlider.h */,
+				3ADFA3B71CB81A6700D5270A /* RSOpacitySlider.m */,
+				3ADFA3B81CB81A6700D5270A /* TestColorViewController.h */,
+				3ADFA3B91CB81A6700D5270A /* TestColorViewController.m */,
+			);
+			name = RSColorPicker;
+			path = Classes/RSColorPicker;
+			sourceTree = "<group>";
+		};
+		3ADFA38A1CB81A6700D5270A /* ColorPickerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA38B1CB81A6700D5270A /* ANImageBitmapRep */,
+				3ADFA3A71CB81A6700D5270A /* BGRSLoupeLayer.h */,
+				3ADFA3A81CB81A6700D5270A /* BGRSLoupeLayer.m */,
+				3ADFA3A91CB81A6700D5270A /* RSColorFunctions.h */,
+				3ADFA3AA1CB81A6700D5270A /* RSColorFunctions.m */,
+				3ADFA3AB1CB81A6700D5270A /* RSColorPickerState.h */,
+				3ADFA3AC1CB81A6700D5270A /* RSColorPickerState.m */,
+				3ADFA3AD1CB81A6700D5270A /* RSColorPickerView.h */,
+				3ADFA3AE1CB81A6700D5270A /* RSColorPickerView.m */,
+				3ADFA3AF1CB81A6700D5270A /* RSGenerateOperation.h */,
+				3ADFA3B01CB81A6700D5270A /* RSGenerateOperation.m */,
+				3ADFA3B11CB81A6700D5270A /* RSSelectionLayer.h */,
+				3ADFA3B21CB81A6700D5270A /* RSSelectionLayer.m */,
+			);
+			path = ColorPickerClasses;
+			sourceTree = "<group>";
+		};
+		3ADFA38B1CB81A6700D5270A /* ANImageBitmapRep */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA38C1CB81A6700D5270A /* ANImageBitmapRep.h */,
+				3ADFA38D1CB81A6700D5270A /* ANImageBitmapRep.m */,
+				3ADFA38E1CB81A6700D5270A /* BitmapContextRep.h */,
+				3ADFA38F1CB81A6700D5270A /* BitmapContextRep.m */,
+				3ADFA3901CB81A6700D5270A /* Compatibility */,
+				3ADFA3971CB81A6700D5270A /* CoreGraphics */,
+				3ADFA39C1CB81A6700D5270A /* Manipulators */,
+			);
+			path = ANImageBitmapRep;
+			sourceTree = "<group>";
+		};
+		3ADFA3901CB81A6700D5270A /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA3911CB81A6700D5270A /* NSImage+ANImageBitmapRep.h */,
+				3ADFA3921CB81A6700D5270A /* NSImage+ANImageBitmapRep.m */,
+				3ADFA3931CB81A6700D5270A /* OSCommonImage.h */,
+				3ADFA3941CB81A6700D5270A /* OSCommonImage.m */,
+				3ADFA3951CB81A6700D5270A /* UIImage+ANImageBitmapRep.h */,
+				3ADFA3961CB81A6700D5270A /* UIImage+ANImageBitmapRep.m */,
+			);
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		3ADFA3971CB81A6700D5270A /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA3981CB81A6700D5270A /* CGContextCreator.h */,
+				3ADFA3991CB81A6700D5270A /* CGContextCreator.m */,
+				3ADFA39A1CB81A6700D5270A /* CGImageContainer.h */,
+				3ADFA39B1CB81A6700D5270A /* CGImageContainer.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		3ADFA39C1CB81A6700D5270A /* Manipulators */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA39D1CB81A6700D5270A /* BitmapContextManipulator.h */,
+				3ADFA39E1CB81A6700D5270A /* BitmapContextManipulator.m */,
+				3ADFA39F1CB81A6700D5270A /* BitmapCropManipulator.h */,
+				3ADFA3A01CB81A6700D5270A /* BitmapCropManipulator.m */,
+				3ADFA3A11CB81A6700D5270A /* BitmapDrawManipulator.h */,
+				3ADFA3A21CB81A6700D5270A /* BitmapDrawManipulator.m */,
+				3ADFA3A31CB81A6700D5270A /* BitmapRotationManipulator.h */,
+				3ADFA3A41CB81A6700D5270A /* BitmapRotationManipulator.m */,
+				3ADFA3A51CB81A6700D5270A /* BitmapScaleManipulator.h */,
+				3ADFA3A61CB81A6700D5270A /* BitmapScaleManipulator.m */,
+			);
+			path = Manipulators;
+			sourceTree = "<group>";
+		};
+		3ADFA3F31CB81B2A00D5270A /* ColorPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFA3EB1CB81B1800D5270A /* TiColorpickerColorPickerView.h */,
+				3ADFA3EC1CB81B1800D5270A /* TiColorpickerColorPickerView.m */,
+				3ADFA3EF1CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h */,
+				3ADFA3F01CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m */,
+			);
+			name = ColorPickerView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ADFA3D81CB81A6700D5270A /* RSColorPickerView.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* TiColorpicker_Prefix.pch in Headers */,
+				3ADFA3BE1CB81A6700D5270A /* NSImage+ANImageBitmapRep.h in Headers */,
+				3ADFA3C61CB81A6700D5270A /* CGImageContainer.h in Headers */,
+				3ADFA3E31CB81A6700D5270A /* TestColorViewController.h in Headers */,
+				3ADFA3F11CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h in Headers */,
+				3ADFA3D61CB81A6700D5270A /* RSColorPickerState.h in Headers */,
+				3ADFA3ED1CB81B1800D5270A /* TiColorpickerColorPickerView.h in Headers */,
+				3ADFA3C21CB81A6700D5270A /* UIImage+ANImageBitmapRep.h in Headers */,
+				3ADFA3D41CB81A6700D5270A /* RSColorFunctions.h in Headers */,
+				3ADFA3D01CB81A6700D5270A /* BitmapScaleManipulator.h in Headers */,
+				3ADFA3E11CB81A6700D5270A /* RSOpacitySlider.h in Headers */,
+				3ADFA3E01CB81A6700D5270A /* RSColorPicker-Prefix.pch in Headers */,
+				3ADFA3BC1CB81A6700D5270A /* BitmapContextRep.h in Headers */,
+				3ADFA3DE1CB81A6700D5270A /* RSBrightnessSlider.h in Headers */,
+				3ADFA3D21CB81A6700D5270A /* BGRSLoupeLayer.h in Headers */,
+				3ADFA3DC1CB81A6700D5270A /* RSSelectionLayer.h in Headers */,
+				24DD6CF91134B3F500162E58 /* TiColorpickerModule.h in Headers */,
+				3ADFA3CE1CB81A6700D5270A /* BitmapRotationManipulator.h in Headers */,
+				3ADFA3DA1CB81A6700D5270A /* RSGenerateOperation.h in Headers */,
+				3ADFA3BA1CB81A6700D5270A /* ANImageBitmapRep.h in Headers */,
+				3ADFA3CC1CB81A6700D5270A /* BitmapDrawManipulator.h in Headers */,
+				3ADFA3C41CB81A6700D5270A /* CGContextCreator.h in Headers */,
+				3ADFA3C01CB81A6700D5270A /* OSCommonImage.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* TiColorpickerModuleAssets.h in Headers */,
+				3ADFA3CA1CB81A6700D5270A /* BitmapCropManipulator.h in Headers */,
+				3ADFA3C81CB81A6700D5270A /* BitmapContextManipulator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* ti.colorpicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ti.colorpicker" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ti.colorpicker;
+			productName = ti.colorpicker;
+			productReference = D2AAC07E0554694100DB518D /* libTiColorpicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ti.colorpicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ti.colorpicker */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ti.colorpicker */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ADFA3DB1CB81A6700D5270A /* RSGenerateOperation.m in Sources */,
+				3ADFA3CB1CB81A6700D5270A /* BitmapCropManipulator.m in Sources */,
+				3ADFA3E41CB81A6700D5270A /* TestColorViewController.m in Sources */,
+				3ADFA3EE1CB81B1800D5270A /* TiColorpickerColorPickerView.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* TiColorpickerModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* TiColorpickerModuleAssets.m in Sources */,
+				3ADFA3C71CB81A6700D5270A /* CGImageContainer.m in Sources */,
+				3ADFA3DF1CB81A6700D5270A /* RSBrightnessSlider.m in Sources */,
+				3ADFA3DD1CB81A6700D5270A /* RSSelectionLayer.m in Sources */,
+				3ADFA3F21CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m in Sources */,
+				3ADFA3C31CB81A6700D5270A /* UIImage+ANImageBitmapRep.m in Sources */,
+				3ADFA3CF1CB81A6700D5270A /* BitmapRotationManipulator.m in Sources */,
+				3ADFA3BD1CB81A6700D5270A /* BitmapContextRep.m in Sources */,
+				3ADFA3D91CB81A6700D5270A /* RSColorPickerView.m in Sources */,
+				3ADFA3E21CB81A6700D5270A /* RSOpacitySlider.m in Sources */,
+				3ADFA3D31CB81A6700D5270A /* BGRSLoupeLayer.m in Sources */,
+				3ADFA3C91CB81A6700D5270A /* BitmapContextManipulator.m in Sources */,
+				3ADFA3D11CB81A6700D5270A /* BitmapScaleManipulator.m in Sources */,
+				3ADFA3D51CB81A6700D5270A /* RSColorFunctions.m in Sources */,
+				3ADFA3D71CB81A6700D5270A /* RSColorPickerState.m in Sources */,
+				3ADFA3C51CB81A6700D5270A /* CGContextCreator.m in Sources */,
+				3ADFA3BF1CB81A6700D5270A /* NSImage+ANImageBitmapRep.m in Sources */,
+				3ADFA3CD1CB81A6700D5270A /* BitmapDrawManipulator.m in Sources */,
+				3ADFA3C11CB81A6700D5270A /* OSCommonImage.m in Sources */,
+				3ADFA3BB1CB81A6700D5270A /* ANImageBitmapRep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* ti.colorpicker */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiColorpicker.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiColorpicker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiColorpicker;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/TiColorpicker.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiColorpicker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiColorpicker;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiColorpicker.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiColorpicker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiColorpicker;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/TiColorpicker.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiColorpicker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiColorpicker;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ti.colorpicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ti.colorpicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

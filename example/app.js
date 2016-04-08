@@ -1,13 +1,5 @@
-# Ti.ColorPicker
-
-> Work in progress!
-
-## Usage
-
-```js
 var win = Ti.UI.createWindow();
 var ColorPicker = require("ti.colorpicker");
-
 var picker = ColorPicker.createColorPickerView({
     width: 300,
     height: 300,
@@ -29,4 +21,3 @@ var result = Ti.UI.createView({
 win.add(result);
 win.add(picker);
 win.open();
-```
