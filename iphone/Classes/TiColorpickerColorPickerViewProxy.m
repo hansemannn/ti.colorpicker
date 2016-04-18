@@ -50,12 +50,12 @@ USE_VIEW_FOR_CONTENT_HEIGHT
 
 -(TiDimension)defaultAutoWidthBehavior:(id)unused
 {
-    return TiDimensionAutoSize;
+    return TiDimensionAutoFill;
 }
 
 -(TiDimension)defaultAutoHeightBehavior:(id)unused
 {
-    return TiDimensionAutoSize;
+    return TiDimensionAutoFill;
 }
 
 @end

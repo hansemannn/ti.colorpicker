@@ -10,44 +10,19 @@
 
 @implementation TiColorpickerColorPickerView
 
-
-#ifdef TI_USE_AUTOLAYOUT
--(void)initializeTiLayoutView
-{
-    [super initializeTiLayoutView];
-    [self setDefaultHeight:TiDimensionAutoSize];
-    [self setDefaultWidth:TiDimensionAutoSize];
-}
-#endif
-
 - (TiColorpickerColorPickerViewProxy*)colorPickerViewProxy
 {
     return (TiColorpickerColorPickerViewProxy*)self.proxy;
 }
 
--(RSColorPickerView*)colorPicker
+#ifdef TI_USE_AUTOLAYOUT
+-(void)initializeTiLayoutView
 {
-    if (_colorPicker == nil) {
-        _colorPicker = [[RSColorPickerView alloc] initWithFrame:[self bounds]];
-        _colorPicker.delegate = self;
-        
-        [_colorPicker setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-        [_colorPicker setContentMode:[self contentModeForColorPickerView]];
-        
-        [self addSubview:_colorPicker];
-    }
-    
-    return _colorPicker;
+    [super initializeTiLayoutView];
+    [self setDefaultHeight:TiDimensionAutoFill];
+    [self setDefaultWidth:TiDimensionAutoFill];
 }
-
-#pragma mark Cleanup
-
--(void)dealloc
-{
-    RELEASE_TO_NIL(_colorPicker);
-    
-    [super dealloc];
-}
+#endif
 
 #pragma mark Public APIs
 
@@ -67,12 +42,12 @@
 
 -(void)updateContentMode
 {
-    if (_colorPicker != nil) {
-        [_colorPicker setContentMode:[self contentModeForColorPickerView]];
+    if (self != nil) {
+        [self setContentMode:[self contentModeForColorPicker]];
     }
 }
 
--(UIViewContentMode)contentModeForColorPickerView
+-(UIViewContentMode)contentModeForColorPicker
 {
     if (TiDimensionIsAuto(width) || TiDimensionIsAutoSize(width) || TiDimensionIsUndefined(width) ||
         TiDimensionIsAuto(height) || TiDimensionIsAutoSize(height) || TiDimensionIsUndefined(height)) {
@@ -85,14 +60,13 @@
 
 -(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
-    for (UIView *child in [self subviews])
+    for (UIView *child in [[self colorPicker] subviews])
     {
         [TiUtils setView:child positionRect:bounds];
     }
     
     [super frameSizeChanged:frame bounds:bounds];
 }
-
 
 -(CGFloat)contentWidthForWidth:(CGFloat)suggestedWidth
 {
@@ -120,8 +94,7 @@
         return (width_*autoHeight/autoWidth);
     }
     
-    if (autoHeight > 0)
-    {
+    if (autoHeight > 0) {
         return autoHeight;
     }
     
@@ -141,6 +114,29 @@
     } else {
         return UIViewContentModeScaleToFill;
     }
+}
+
+-(RSColorPickerView*)colorPicker
+{
+    if (_colorPicker == nil) {
+        _colorPicker = [[RSColorPickerView alloc] initWithFrame:[self bounds]];
+        [_colorPicker setDelegate:self];
+        [_colorPicker setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+        [_colorPicker setContentMode:[self contentModeForColorPicker]];
+        
+        [self addSubview:_colorPicker];
+    }
+    
+    return _colorPicker;
+}
+
+#pragma mark Cleanup
+
+-(void)dealloc
+{
+    RELEASE_TO_NIL(_colorPicker);
+    
+    [super dealloc];
 }
 
 #pragma mark Delegates
