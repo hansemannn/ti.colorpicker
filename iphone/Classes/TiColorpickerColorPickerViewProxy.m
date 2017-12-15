@@ -42,18 +42,26 @@
     [[[self colorPickerView] colorPicker] setShowLoupe:[TiUtils boolValue:value def:YES]];
 }
 
+
+-(void)setSelectionColor:(id)value
+{
+    ENSURE_TYPE(value, NSString);
+    [[[self colorPickerView] colorPicker] setSelectionColor:[[TiUtils colorValue:value] _color]];
+}
+
+
 #pragma mark Helper
 
 USE_VIEW_FOR_CONTENT_WIDTH
 
 USE_VIEW_FOR_CONTENT_HEIGHT
 
--(TiDimension)defaultAutoWidthBehavior:(id)unused
+- (TiDimension)defaultAutoWidthBehavior:(id)unused
 {
     return TiDimensionAutoFill;
 }
 
--(TiDimension)defaultAutoHeightBehavior:(id)unused
+- (TiDimension)defaultAutoHeightBehavior:(id)unused
 {
     return TiDimensionAutoFill;
 }
