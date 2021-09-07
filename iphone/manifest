@@ -2,9 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.2
+version: 2.0.0
 apiversion: 2
-architectures: armv7 arm64 i386 x86_64
+architectures: arm64 x86_64
 description: ti.colorpicker
 author: Hans Knoechel
 license: Apache 2.0
@@ -15,4 +15,4 @@ name: ti.colorpicker
 moduleid: ti.colorpicker
 guid: 211ea16a-3447-42e8-b57a-a47fd0bbd6f0
 platform: iphone
-minsdk: 5.0.0
+minsdk:9.3.2 
