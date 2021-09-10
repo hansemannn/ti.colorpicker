@@ -17,20 +17,34 @@ API_AVAILABLE(ios(14))
   UIColor *selectedColor = [TiUtils colorValue:args[@"selectionColor"]].color;
 
   RELEASE_TO_NIL(_onSelectCallback);
+
   _onSelectCallback = [args[@"onSelect"] retain];
+  _onHideCallback = [args[@"onHide"] retain];
 
-  UIColorPickerViewController *picker = [UIColorPickerViewController new];
-  picker.selectedColor = selectedColor;
-  picker.delegate = self;
+  _picker = [[UIColorPickerViewController new] retain];
+  _picker.selectedColor = selectedColor;
+  _picker.delegate = self;
+  _picker.supportsAlpha = NO;
 
-  [[TiApp app] showModalController:picker animated:YES];
+  [[TiApp app] showModalController:_picker animated:YES];
+}
+
+- (void)colorPickerViewControllerDidFinish:(UIColorPickerViewController *)viewController
+{
+  _picker.delegate = nil;
+  RELEASE_TO_NIL(_onSelectCallback);
+  RELEASE_TO_NIL(_picker);
+
+  if (_onHideCallback != nil) {
+    [_onHideCallback call:@[@{}] thisObject:self];
+    RELEASE_TO_NIL(_onHideCallback);
+  }
 }
 
 - (void)colorPickerViewControllerDidSelectColor:(UIColorPickerViewController *)viewController
 {
   if (_onSelectCallback != nil) {
     [_onSelectCallback call:@[@{ @"color": [TiUtils hexColorValue:viewController.selectedColor] }] thisObject:self];
-    RELEASE_TO_NIL(_onSelectCallback);
   }
 }
 
