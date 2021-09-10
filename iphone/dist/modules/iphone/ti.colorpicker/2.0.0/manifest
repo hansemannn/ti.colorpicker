@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 2.0.0
+apiversion: 2
+architectures: arm64 x86_64
+description: ti.colorpicker
+author: Hans Knoechel
+license: Apache 2.0
+copyright: Copyright (c) 2016 by Hans Knoechel
+
+# these should not be edited
+name: ti.colorpicker
+moduleid: ti.colorpicker
+guid: 211ea16a-3447-42e8-b57a-a47fd0bbd6f0
+platform: iphone
+minsdk:9.3.2 

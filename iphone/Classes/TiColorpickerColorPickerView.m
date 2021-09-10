@@ -1,8 +1,8 @@
 /**
- * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2016 by Appcelerator, Inc. All Rights Reserved.
- * Licensed under the terms of the Apache Public License
- * Please see the LICENSE included with this distribution for details.
+ * ti.colorpicker
+ *
+ * Created by Hans Knöchel
+ * Copyright (c) 2016-present Hans Knöchel. All rights reserved.
  */
 
 #import "TiColorpickerColorPickerView.h"
@@ -24,15 +24,21 @@
 }
 #endif
 
+- (void)dealloc
+{
+  RELEASE_TO_NIL(_colorPicker);
+  [super dealloc];
+}
+
 #pragma mark Public APIs
 
--(void)setWidth_:(id)width_
+- (void)setWidth_:(id)width_
 {
     width = TiDimensionFromObject(width_);
     [self updateContentMode];
 }
 
--(void)setHeight_:(id)height_
+- (void)setHeight_:(id)height_
 {
     height = TiDimensionFromObject(height_);
     [self updateContentMode];
@@ -40,14 +46,14 @@
 
 #pragma mark Layout helper
 
--(void)updateContentMode
+- (void)updateContentMode
 {
     if (self != nil) {
         [self setContentMode:[self contentModeForColorPicker]];
     }
 }
 
--(UIViewContentMode)contentModeForColorPicker
+- (UIViewContentMode)contentModeForColorPicker
 {
     if (TiDimensionIsAuto(width) || TiDimensionIsAutoSize(width) || TiDimensionIsUndefined(width) ||
         TiDimensionIsAuto(height) || TiDimensionIsAutoSize(height) || TiDimensionIsUndefined(height)) {
@@ -58,7 +64,7 @@
     }
 }
 
--(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
+- (void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
     for (UIView *child in [[self colorPicker] subviews])
     {
@@ -68,7 +74,7 @@
     [super frameSizeChanged:frame bounds:bounds];
 }
 
--(CGFloat)contentWidthForWidth:(CGFloat)suggestedWidth
+- (CGFloat)contentWidthForWidth:(CGFloat)suggestedWidth
 {
     if (autoWidth > 0)
     {
@@ -88,7 +94,7 @@
     return 0;
 }
 
--(CGFloat)contentHeightForWidth:(CGFloat)width_
+- (CGFloat)contentHeightForWidth:(CGFloat)width_
 {
     if (width_ != autoWidth && autoWidth>0 && autoHeight > 0) {
         return (width_*autoHeight/autoWidth);
@@ -106,7 +112,7 @@
     return 0;
 }
 
--(UIViewContentMode)contentMode
+- (UIViewContentMode)contentMode
 {
     if (TiDimensionIsAuto(width) || TiDimensionIsAutoSize(width) || TiDimensionIsUndefined(width) ||
         TiDimensionIsAuto(height) || TiDimensionIsAutoSize(height) || TiDimensionIsUndefined(height)) {
@@ -116,7 +122,7 @@
     }
 }
 
--(RSColorPickerView*)colorPicker
+- (RSColorPickerView*)colorPicker
 {
     if (_colorPicker == nil) {
         _colorPicker = [[RSColorPickerView alloc] initWithFrame:[self bounds]];
@@ -130,18 +136,9 @@
     return _colorPicker;
 }
 
-#pragma mark Cleanup
-
--(void)dealloc
-{
-    RELEASE_TO_NIL(_colorPicker);
-    
-    [super dealloc];
-}
-
 #pragma mark Delegates
 
--(void)colorPickerDidChangeSelection:(RSColorPickerView *)colorPicker
+- (void)colorPickerDidChangeSelection:(RSColorPickerView *)colorPicker
 {
     [[self colorPickerViewProxy] fireEvent:@"selection" withObject:@{
         @"color": [self hexStringFromColor:[colorPicker selectionColor]]

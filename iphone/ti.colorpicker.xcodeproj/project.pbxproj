@@ -67,8 +67,6 @@
 		3ADFA3E01CB81A6700D5270A /* RSColorPicker-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B51CB81A6700D5270A /* RSColorPicker-Prefix.pch */; };
 		3ADFA3E11CB81A6700D5270A /* RSOpacitySlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B61CB81A6700D5270A /* RSOpacitySlider.h */; };
 		3ADFA3E21CB81A6700D5270A /* RSOpacitySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3B71CB81A6700D5270A /* RSOpacitySlider.m */; };
-		3ADFA3E31CB81A6700D5270A /* TestColorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3B81CB81A6700D5270A /* TestColorViewController.h */; };
-		3ADFA3E41CB81A6700D5270A /* TestColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3B91CB81A6700D5270A /* TestColorViewController.m */; };
 		3ADFA3E61CB81A8400D5270A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADFA3E51CB81A8400D5270A /* Accelerate.framework */; };
 		3ADFA3E81CB81A8800D5270A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADFA3E71CB81A8800D5270A /* QuartzCore.framework */; };
 		3ADFA3EA1CB81A8E00D5270A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADFA3E91CB81A8E00D5270A /* CoreGraphics.framework */; };
@@ -76,6 +74,8 @@
 		3ADFA3EE1CB81B1800D5270A /* TiColorpickerColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3EC1CB81B1800D5270A /* TiColorpickerColorPickerView.m */; };
 		3ADFA3F11CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADFA3EF1CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h */; };
 		3ADFA3F21CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADFA3F01CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m */; };
+		3AFD482026EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFD481E26EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.h */; };
+		3AFD482126EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD481F26EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.m */; };
 		AA747D9F0F9514B9006C5449 /* TiColorpicker_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiColorpicker_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -137,8 +137,6 @@
 		3ADFA3B51CB81A6700D5270A /* RSColorPicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSColorPicker-Prefix.pch"; sourceTree = "<group>"; };
 		3ADFA3B61CB81A6700D5270A /* RSOpacitySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOpacitySlider.h; sourceTree = "<group>"; };
 		3ADFA3B71CB81A6700D5270A /* RSOpacitySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOpacitySlider.m; sourceTree = "<group>"; };
-		3ADFA3B81CB81A6700D5270A /* TestColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestColorViewController.h; sourceTree = "<group>"; };
-		3ADFA3B91CB81A6700D5270A /* TestColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestColorViewController.m; sourceTree = "<group>"; };
 		3ADFA3E51CB81A8400D5270A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		3ADFA3E71CB81A8800D5270A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3ADFA3E91CB81A8E00D5270A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +144,8 @@
 		3ADFA3EC1CB81B1800D5270A /* TiColorpickerColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiColorpickerColorPickerView.m; path = Classes/TiColorpickerColorPickerView.m; sourceTree = "<group>"; };
 		3ADFA3EF1CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiColorpickerColorPickerViewProxy.h; path = Classes/TiColorpickerColorPickerViewProxy.h; sourceTree = "<group>"; };
 		3ADFA3F01CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiColorpickerColorPickerViewProxy.m; path = Classes/TiColorpickerColorPickerViewProxy.m; sourceTree = "<group>"; };
+		3AFD481E26EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TiColorpickerColorPickerDialogProxy.h; path = Classes/TiColorpickerColorPickerDialogProxy.h; sourceTree = "<group>"; };
+		3AFD481F26EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TiColorpickerColorPickerDialogProxy.m; path = Classes/TiColorpickerColorPickerDialogProxy.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiColorpicker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiColorpicker_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libTiColorpicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiColorpicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +205,7 @@
 				24DD6CF71134B3F500162E58 /* TiColorpickerModule.h */,
 				24DD6CF81134B3F500162E58 /* TiColorpickerModule.m */,
 				3ADFA3F31CB81B2A00D5270A /* ColorPickerView */,
+				3A00101626EB588200F829BF /* ColorPickerDialog */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -218,6 +219,15 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		3A00101626EB588200F829BF /* ColorPickerDialog */ = {
+			isa = PBXGroup;
+			children = (
+				3AFD481E26EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.h */,
+				3AFD481F26EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.m */,
+			);
+			name = ColorPickerDialog;
+			sourceTree = "<group>";
+		};
 		3ADFA3891CB81A6700D5270A /* RSColorPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,8 +237,6 @@
 				3ADFA3B51CB81A6700D5270A /* RSColorPicker-Prefix.pch */,
 				3ADFA3B61CB81A6700D5270A /* RSOpacitySlider.h */,
 				3ADFA3B71CB81A6700D5270A /* RSOpacitySlider.m */,
-				3ADFA3B81CB81A6700D5270A /* TestColorViewController.h */,
-				3ADFA3B91CB81A6700D5270A /* TestColorViewController.m */,
 			);
 			name = RSColorPicker;
 			path = Classes/RSColorPicker;
@@ -331,7 +339,6 @@
 				AA747D9F0F9514B9006C5449 /* TiColorpicker_Prefix.pch in Headers */,
 				3ADFA3BE1CB81A6700D5270A /* NSImage+ANImageBitmapRep.h in Headers */,
 				3ADFA3C61CB81A6700D5270A /* CGImageContainer.h in Headers */,
-				3ADFA3E31CB81A6700D5270A /* TestColorViewController.h in Headers */,
 				3ADFA3F11CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.h in Headers */,
 				3ADFA3D61CB81A6700D5270A /* RSColorPickerState.h in Headers */,
 				3ADFA3ED1CB81B1800D5270A /* TiColorpickerColorPickerView.h in Headers */,
@@ -351,6 +358,7 @@
 				3ADFA3CC1CB81A6700D5270A /* BitmapDrawManipulator.h in Headers */,
 				3ADFA3C41CB81A6700D5270A /* CGContextCreator.h in Headers */,
 				3ADFA3C01CB81A6700D5270A /* OSCommonImage.h in Headers */,
+				3AFD482026EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TiColorpickerModuleAssets.h in Headers */,
 				3ADFA3CA1CB81A6700D5270A /* BitmapCropManipulator.h in Headers */,
 				3ADFA3C81CB81A6700D5270A /* BitmapContextManipulator.h in Headers */,
@@ -387,13 +395,14 @@
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ti.colorpicker" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				ja,
+				en,
+				Base,
+				de,
+				fr,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* ti.colorpicker */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -429,13 +438,13 @@
 			files = (
 				3ADFA3DB1CB81A6700D5270A /* RSGenerateOperation.m in Sources */,
 				3ADFA3CB1CB81A6700D5270A /* BitmapCropManipulator.m in Sources */,
-				3ADFA3E41CB81A6700D5270A /* TestColorViewController.m in Sources */,
 				3ADFA3EE1CB81B1800D5270A /* TiColorpickerColorPickerView.m in Sources */,
 				24DD6CFA1134B3F500162E58 /* TiColorpickerModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* TiColorpickerModuleAssets.m in Sources */,
 				3ADFA3C71CB81A6700D5270A /* CGImageContainer.m in Sources */,
 				3ADFA3DF1CB81A6700D5270A /* RSBrightnessSlider.m in Sources */,
 				3ADFA3DD1CB81A6700D5270A /* RSSelectionLayer.m in Sources */,
+				3AFD482126EB378800B5A998 /* TiColorpickerColorPickerDialogProxy.m in Sources */,
 				3ADFA3F21CB81B2500D5270A /* TiColorpickerColorPickerViewProxy.m in Sources */,
 				3ADFA3C31CB81A6700D5270A /* UIImage+ANImageBitmapRep.m in Sources */,
 				3ADFA3CF1CB81A6700D5270A /* BitmapRotationManipulator.m in Sources */,
@@ -470,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -512,6 +522,7 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				DSTROOT = /tmp/TiColorpicker.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;

@@ -1,9 +1,10 @@
 /**
- * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2016 by Appcelerator, Inc. All Rights Reserved.
- * Licensed under the terms of the Apache Public License
- * Please see the LICENSE included with this distribution for details.
+ * ti.colorpicker
+ *
+ * Created by Hans Knöchel
+ * Copyright (c) 2016-present Hans Knöchel. All rights reserved.
  */
+
 #import "TiUIView.h"
 #import "RSColorPickerView.h"
 
@@ -14,8 +15,8 @@
     CGFloat autoWidth;
 }
 
-@property(nonatomic,retain) RSColorPickerView *colorPicker;
+@property(nonatomic, retain) RSColorPickerView *colorPicker;
 
--(RSColorPickerView*)colorPicker;
+- (RSColorPickerView*)colorPicker;
 
 @end
