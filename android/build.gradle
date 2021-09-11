@@ -1,10 +1,7 @@
 repositories {
-  maven {
-    url "https://jitpack.io"
-  }
+  mavenCentral()
 }
 
 dependencies {
-  implementation 'com.google.android:flexbox:2.0.1'
-  implementation 'com.github.dhaval2404:colorpicker:2.0'
+  implementation "com.github.skydoves:colorpickerview:2.2.3"
 }

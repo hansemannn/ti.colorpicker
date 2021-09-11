@@ -8,17 +8,17 @@
  */
 package ti.colorpicker;
 
+import android.content.DialogInterface;
+
+import com.skydoves.colorpickerview.ColorEnvelope;
+import com.skydoves.colorpickerview.ColorPickerDialog;
+import com.skydoves.colorpickerview.listeners.ColorEnvelopeListener;
+
 import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
-import org.jetbrains.annotations.NotNull;
-
-import com.github.dhaval2404.colorpicker.MaterialColorPickerDialog;
-import com.github.dhaval2404.colorpicker.listener.ColorListener;
-import com.github.dhaval2404.colorpicker.model.ColorShape;
-import com.github.dhaval2404.colorpicker.model.ColorSwatch;
 
 @Kroll.module(name="TiColorpicker", id="ti.colorpicker")
 public class TiColorpickerModule extends KrollModule
@@ -29,20 +29,22 @@ public class TiColorpickerModule extends KrollModule
 	public void showColorPicker(KrollDict args)
 	{
 		String selectionColor = args.optString("selectionColor", "#000000");
+		String selectButtonTitle = args.optString("selectButtonTitle", "Select");
+		String cancelButtonTitle = args.optString("cancelButtonTitle", "Cancel");
 		KrollFunction onSelect = (KrollFunction)args.get("onSelect");
 
-		new MaterialColorPickerDialog
-			.Builder(TiApplication.getAppCurrentActivity())
-			// .setTitle("Pick Theme")
-			.setColorShape(ColorShape.SQAURE)
-			.setColorSwatch(ColorSwatch._300)
-			.setDefaultColor(selectionColor)
-			.setColorListener((color, colorHex) -> {
+		new ColorPickerDialog.Builder(TiApplication.getAppCurrentActivity())
+			.setPreferenceName("TiColorPickerDialog")
+			.setPositiveButton(selectButtonTitle, (ColorEnvelopeListener) (envelope, fromUser) -> {
 				KrollDict event = new KrollDict();
-				event.put("color", colorHex);
+				event.put("color", envelope.getHexCode());
 
 				onSelect.callAsync(krollObject, event);
 			})
+			.setNegativeButton(cancelButtonTitle, (dialogInterface, i) -> dialogInterface.dismiss())
+			.attachAlphaSlideBar(false) // the default value is true.
+			.attachBrightnessSlideBar(true)  // the default value is true.
+			.setBottomSpace(12) // set a bottom space between the last slide bar and buttons.
 			.show();
 	}
 }
