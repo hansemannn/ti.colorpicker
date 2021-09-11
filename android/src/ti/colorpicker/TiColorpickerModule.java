@@ -8,12 +8,12 @@
  */
 package ti.colorpicker;
 
+import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.kroll.common.Log;
-import org.appcelerator.kroll.common.TiConfig;
+import org.jetbrains.annotations.NotNull;
 
 import com.github.dhaval2404.colorpicker.MaterialColorPickerDialog;
 import com.github.dhaval2404.colorpicker.listener.ColorListener;
@@ -28,19 +28,20 @@ public class TiColorpickerModule extends KrollModule
 	@Kroll.method
 	public void showColorPicker(KrollDict args)
 	{
-		String selectionColor = args.optString("selectionColor");
+		String selectionColor = args.optString("selectionColor", "#000000");
+		KrollFunction onSelect = (KrollFunction)args.get("onSelect");
 
 		new MaterialColorPickerDialog
-			.Builder(this)
+			.Builder(TiApplication.getAppCurrentActivity())
 			// .setTitle("Pick Theme")
 			.setColorShape(ColorShape.SQAURE)
 			.setColorSwatch(ColorSwatch._300)
 			.setDefaultColor(selectionColor)
-			.setColorListener(new ColorListener() {
-				@Override
-				public void onColorSelected(int color, @NotNull String colorHex) {
-					// Handle Color Selection
-				}
+			.setColorListener((color, colorHex) -> {
+				KrollDict event = new KrollDict();
+				event.put("color", colorHex);
+
+				onSelect.callAsync(krollObject, event);
 			})
 			.show();
 	}
