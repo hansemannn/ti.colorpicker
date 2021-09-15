@@ -1,4 +1,7 @@
+repositories {
+  mavenCentral()
+}
 
 dependencies {
-	implementation 'com.github.dhaval2404:colorpicker:2.0'
+  implementation "com.github.skydoves:colorpickerview:2.2.3"
 }
