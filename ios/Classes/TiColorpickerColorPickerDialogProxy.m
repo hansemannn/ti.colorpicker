@@ -10,34 +10,53 @@
 API_AVAILABLE(ios(14))
 @implementation TiColorpickerColorPickerDialogProxy
 
+- (void)_initWithProperties:(NSDictionary *)properties
+{
+  [super _initWithProperties:properties];
+
+  _onSelectCallback = [properties[@"onSelect"] retain];
+  _onHideCallback = [properties[@"onHide"] retain];
+}
+
+- (void)dealloc
+{
+  [super dealloc];
+
+  RELEASE_TO_NIL(_onSelectCallback);
+  RELEASE_TO_NIL(_onHideCallback);
+
+  _picker.delegate = nil;
+  RELEASE_TO_NIL(_picker);
+}
+
 - (void)show:(id)args
 {
   ENSURE_SINGLE_ARG(args, NSDictionary);
   
   UIColor *selectedColor = [TiUtils colorValue:args[@"selectionColor"]].color;
 
-  RELEASE_TO_NIL(_onSelectCallback);
+  if (_picker == nil) {
+    _picker = [[UIColorPickerViewController new] retain];
+    _picker.delegate = self;
+    _picker.supportsAlpha = NO;
+  }
 
-  _onSelectCallback = [args[@"onSelect"] retain];
-  _onHideCallback = [args[@"onHide"] retain];
-
-  _picker = [[UIColorPickerViewController new] retain];
   _picker.selectedColor = selectedColor;
-  _picker.delegate = self;
-  _picker.supportsAlpha = NO;
 
   [[TiApp app] showModalController:_picker animated:YES];
 }
 
+- (void)hide:(id)unused
+{
+  TiThreadPerformOnMainThread(^{
+    [_picker dismissViewControllerAnimated:YES completion:nil];
+  }, NO);
+}
+
 - (void)colorPickerViewControllerDidFinish:(UIColorPickerViewController *)viewController
 {
-  _picker.delegate = nil;
-  RELEASE_TO_NIL(_onSelectCallback);
-  RELEASE_TO_NIL(_picker);
-
   if (_onHideCallback != nil) {
     [_onHideCallback call:@[@{}] thisObject:self];
-    RELEASE_TO_NIL(_onHideCallback);
   }
 }
 
