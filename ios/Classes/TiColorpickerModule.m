@@ -24,11 +24,4 @@
 	return @"ti.colorpicker";
 }
 
-#pragma mark Public API's
-
-- (void)showColorPicker:(id)args
-{
-  
-}
-
 @end
