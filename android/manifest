@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 2.0.0
 apiversion: 4
 architectures: arm64-v8a armeabi-v7a x86 x86_64
 description: ti.colorpicker
@@ -15,4 +15,4 @@ name: ti.colorpicker
 moduleid: ti.colorpicker
 guid: 0d578c5b-bef8-4342-abe7-faf29f6a2a79
 platform: android
-minsdk: 10.0.2
+minsdk: 12.5.0
