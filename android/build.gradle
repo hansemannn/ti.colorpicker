@@ -3,5 +3,5 @@ repositories {
 }
 
 dependencies {
-  implementation "com.github.skydoves:colorpickerview:2.2.3"
+  implementation "com.github.skydoves:colorpickerview:2.3.0"
 }

@@ -1,8 +1,6 @@
 # Ti.ColorPicker
 
-Support color pickers in Titanium Mobile. This module bridges [RSColorPicker](https://github.com/RSully/RSColorPicker), thank you @RSully!
-
-<img width="225" src="http://abload.de/img/colorpickerojjlu.png">
+Support color pickers in Titanium Mobile. The iOS module bridges [RSColorPicker](https://github.com/RSully/RSColorPicker), thank you @RSully! For Android it is using [ColorPickerView](https://github.com/skydoves/ColorPickerView) by skydoves.
 
 ## Usage
 
@@ -37,6 +35,28 @@ win.add(result);
 win.add(picker);
 win.open();
 ```
+
+## Android
+
+<img src="./example/img_android.png"/>
+
+```js
+var ColorPicker = require("ti.colorpicker");
+ColorPicker.showColorPicker({
+  onSelect: function(event) {
+    console.log(event.color)
+  }
+})
+```
+showColorPicker() parameters:
+* <b>title</b> (string): dialog title
+* <b>selectionColor</b> (string): default color value
+* <b>selectButtonTitle</b> (string): select button text
+* <b>cancelButtonTitle</b> (string): cancel button text
+* <b>alphaSlider</b> (boolean): show alpha slider
+* <b>brightnessSlider</b> (boolean): show brightness slider
+* <b>onSelect</b> (function): success callback
+
 
 ## Copyright
 
